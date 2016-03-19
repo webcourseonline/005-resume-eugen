@@ -20,6 +20,8 @@
 </head>
 <body>
 
+
+<!-- nav bar <-->
 <div class="conteiner">
     <div class="row">
         <div class="navbar navbar-inverse">
@@ -32,10 +34,11 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Контакты</a> </li>
-                        <li><a href="#">Оброзавания</a> </li>
-                        <li><a href="#">Опыт</a> </li>
-                        <li><a href="#">Навыки</a> </li>
+                        <li><a href="# conta">Контакты</a></li>
+                        <li><a href="#">Оброзавания</a></li>
+                        <li><a href="#">Опыт</a></li>
+                        <li><a href="#">Навыки</a></li>
+
 
                     </ul>
                 </div>
@@ -54,7 +57,7 @@
         <p><img src="img/nast.jpg" width="150" height="200"
                 alt="foto" align="right"
                 vspace="5" hspace="200" class="img-thumbnail">
-            </p>
+        </p>
     </div>
     <div class="contacts">
         <h2>Контакты</h2>
@@ -66,7 +69,7 @@
             <li><span class="glyphicon glyphicon-envelope" style="color:#;"></span>
                 <a href="mailto:#">nastoyahy@gmail.com </a></li>
             <li>skype nastoyashy</li>
-        </ul>   
+        </ul>
     </div>
     <div class="education">
         <h2>Образование</h2>
@@ -110,15 +113,52 @@
         <h3>Навыки</h3>
         <ul>
             <li>Владение ПК: MS Office (Word, Excel, Power Point, ЕRP, E-Check) 1C</li>
-            <li>Владение оргтехникой:  сканер, принтер, ксерокс, факс</li>
+            <li>Владение оргтехникой: сканер, принтер, ксерокс, факс</li>
             <li>Английский – Pre Intermediate</li>
         </ul>
     </div>
 </div>
+<div class="container" style="text-align: center; margin-top: 10px;">
+    <a href="#contact" data-toggle="modal" class="btn btn-primary btn-lg">Обратная Связь</a>
+</div>
+<div id="contact" class="modal fade" tabindex="-1" , role="dialog" , aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" , aria-hidden="true">×</button>
+                <h3 class="modal-title">Контакты:</h3>
+            </div>
+            <form id="contact-form" class="modal-body" role="form">
+                <div class="form-group">
+                    <input class="form-control input-lg" type="text" , placeholder="Ваше имя" , required, name="name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control input-lg" type="email" , placeholder="Ваш email" , required, name="mail">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control input-lg" rows="5" , placeholder="Ваше сообщение" , required,
+                              name="message"></textarea>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button class="btn btn-default btn-lg" type="submit" , title="Отправить Email" , form="contact-form">
+                    Отправить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
+
+<script src="feedback/js/jquery-1.11.3.min.js"></script>
+<script src="feedback/js/bootstrap.min.js"></script>
+<script src="feedback/script.js"></script>
+
+</html>
 </body>
 
 </html>
